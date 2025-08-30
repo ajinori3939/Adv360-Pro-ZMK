@@ -4,7 +4,6 @@
  * SPDX-License-Identifier: MIT
  */
 
-
 /* THIS FILE WAS GENERATED!
  *
  * This file was generated automatically. You may or may not want to
@@ -34,18 +33,17 @@
         bindings = <&kp>, <&kp>;
     };
     ht: hold_tap {
-			compatible = "zmk,behavior-hold-tap";
-			label = "Hold Tap";
-			#binding-cells = <2>;
-			tapping_term_ms = <250>;
-			flavor = "tap-preferred";
-			bindings = <&kp>, <&kp>;
-		};
+        compatible = "zmk,behavior-hold-tap";
+        label = "Hold Tap";
+        #binding-cells = <2>;
+        tapping_term_ms = <250>;
+        flavor = "tap-preferred";
+        bindings = <&kp>, <&kp>;
+    };
   };
 
   keymap {
     compatible = "zmk,keymap";
-
 
     default_layer {
       display-name = "Base";
@@ -91,24 +89,9 @@
       >;
     };
 
-    extra1 { 
-      display-name = "Red";    
-      status = "reserved";
-    };
-  
-    extra2 { 
-      display-name = "Purple";    
-      status = "reserved";
-    };
-  
-    extra3 { 
-      display-name = "Cyan";    
-      status = "reserved";
-    };
-  
-    extra4 { 
-      display-name = "Yellow";    
-      status = "reserved";
-    };
+    extra1 { display-name = "Red";    status = "reserved"; };
+    extra2 { display-name = "Purple"; status = "reserved"; };
+    extra3 { display-name = "Cyan";   status = "reserved"; };
+    extra4 { display-name = "Yellow"; status = "reserved"; };
   };
 };
